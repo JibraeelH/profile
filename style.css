@@ -1,0 +1,168 @@
+body {
+  background-color: #b8e0ff;
+  font-family: "Vidaloka", serif;
+  color: #74747e;
+  line-height: normal;
+  font-display: center;
+  font-weight: 400;
+  text-align: center;
+}
+
+link {
+  font-size: medium;
+  font-style: italic;
+  line-height: normal;
+}
+
+h1 {
+  font-size: xx-large;
+  font-style: bold;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: normal;
+}
+
+.vidaloka-regular {
+  font-family: "Vidaloka", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.img-circle {
+  border-radius: 50%;
+  border-color: #1f378d;
+}
+
+.card{
+  background: white;
+  box-shadow: 10px 10px 15px grey;
+  padding: 30px;
+  border: 1px solid rgb(194, 194, 194);
+  margin-top: 5%;
+}
+
+.card-two{
+  background: white;
+  box-shadow: 10px 10px 15px grey;
+  padding: 30px;
+  border: 1px solid rgb(194, 194, 194);
+  margin-top: 5%;
+}
+
+.container {
+  width: 600px;   /* This sets the width */
+  margin: 0 auto
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 15px 15px 15px 15px;
+  font-size: 50px;
+  padding-inline-start: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+  unicode-bidi: isolate;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+
+.button-57 {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .button-57 span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+  }
+
+  .button-57 span:last-child {
+    color: rgb(255, 255, 255);
+    font-style: bold;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+  }
+
+  .button-57:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(143, 140, 140);
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+  }
+
+  .button-57:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+  }
+
+  .button-57:hover span:last-child {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+  }
+}
