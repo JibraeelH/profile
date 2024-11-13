@@ -1,3 +1,4 @@
+
 body {
   background-color: #b8e0ff;
   font-family: "Vidaloka", serif;
@@ -6,6 +7,9 @@ body {
   font-display: center;
   font-weight: 400;
   text-align: center;
+  background-image: url("./images/Blue-Octopus.jpg");
+  background-size: cover;
+  position: relative;
 }
 
 link {
@@ -165,3 +169,8 @@ ul {
     opacity: 1;
     transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
   }
+
+.button-57:hover span:first-child {
+  color: #fff;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+}
