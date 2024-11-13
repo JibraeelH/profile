@@ -7,9 +7,8 @@ body {
   font-display: center;
   font-weight: 400;
   text-align: center;
-  background-image: url("./images/Blue-Octopus.jpg");
+  background-image: url(https://creatureartteacher.com/wp-content/uploads/2022/12/10-Blue-Octopus.jpg);
   background-size: cover;
-  position: relative;
 }
 
 link {
@@ -50,6 +49,11 @@ a:hover {
   padding: 30px;
   border: 1px solid rgb(194, 194, 194);
   margin-top: 5%;
+  border-radius: 13px;
+}
+
+.card p {
+  padding-bottom: 20px;
 }
 
 .card-two{
@@ -58,6 +62,8 @@ a:hover {
   padding: 30px;
   border: 1px solid rgb(194, 194, 194);
   margin-top: 5%;
+  border-radius: 13px;
+  margin-bottom: 30px;
 }
 
 .container {
@@ -71,6 +77,29 @@ a:hover {
   font-size: 50px;
   padding-inline-start: 0 0 0 0;
   margin: 0 0 0 0;
+}
+
+.center-card {
+  text-align: center;
+  background: white;
+  box-shadow: 10px 10px 15px grey;
+  padding: 30px;
+  border: 1px solid rgb(194, 194, 194);
+  margin-top: 5%;
+  padding-bottom: 50px;
+  border-radius: 13px;
+}
+
+.center-card h2 {
+ padding-bottom: 20px;
+}
+
+.stack-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+
 }
 
 ul {
@@ -170,7 +199,3 @@ ul {
     transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
   }
 
-.button-57:hover span:first-child {
-  color: #fff;
-  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
-}
